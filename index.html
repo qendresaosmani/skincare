@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./images/tab.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinCare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #F9F5F3;
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: 600px;
+        }
+        .second {
+            background-image: url('./images/skincare5.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom border-2">
+          <a href="./index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="./images/logo.png" class="ms-3" alt="" style="height: 50px; width: 50px;">
+        </a>
+    
+          <!-- <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 text-uppercase ">
+            <li><a href="#" class="nav-link px-4 link-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-4 link-dark">SkinCare</a></li>
+            <li><a href="#" class="nav-link px-4 link-dark">Shop</a></li>
+            <li><a href="#" class="nav-link px-4 link-dark">Blog</a></li>
+            <li><a href="#" class="nav-link px-4 link-dark">Order</a></li>
+          </ul> -->
+
+          <div class="navbar navbar-expand-lg">
+           <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNav">
+                <div style="margin-left: -200px; margin-right: 250px;" class="text-start" >
+                    <ul class="navbar-nav px-3 text-uppercase ">
+                        <li class="nav-item">
+                          <a class="nav-link px-4 active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link px-4" href="#">SkinCare</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link px-4" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link px-4" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4" href="#">Order</a>
+                          </li>
+                      </ul>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                    <button type="button" class="btn btn-primary">Sign-up</button>
+                  </div>
+                
+              </div>
+           </div>
+          </div>
+    
+          <!-- <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button>
+          </div> -->
+        </header>
+      </div>
+
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active first">
+            <img src="./images/skincare.png" alt="skincare 1">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Example headline.</h1>
+                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item second">
+            <!-- <img src="./images/skincare5.jpg" alt="skincare 1"> -->
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/skincare3.jpg" alt="skincare 1">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>One more for good measure.</h1>
+                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+</body>
+</html>
