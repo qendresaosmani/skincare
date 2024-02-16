@@ -1,0 +1,41 @@
+body {
+  font-family: 'Prata', serif;
+  background-color: #F9F5F3;
+}
+
+.wishlist i {
+  font-size: 22px;
+  color: black;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 470px;
+  margin-top: -70px;
+  position: relative;
+
+}
+
+#carouselExampleSlidesOnly {
+  margin-top: -24px;
+}
+
+#carouselExampleSlidesOnly h1 {
+  font-size: 45px;
+
+}
+
+#skincare h2 {
+  font-weight: bolder;
+  font-size: 35px;
+}
+#skincare .container {
+  background-image: url('../skincare_images/water-splash-top-glass-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
