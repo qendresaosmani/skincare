@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show My Location</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Add custom CSS styles here if needed */
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Show My Location</h1>
+    <div id="map"></div>
+  </div>
+
+  <!-- Google Maps JavaScript API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=test_lOzu4xm6GkrnWNkBB3iNAhk6Zj4omggan97jrTTp&callback=initMap" async defer></script>
+  <script>
+    // Initialize and display the map
+    function initMap() {
+      // Try HTML5 geolocation.
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var userLocation = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          };
+
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: userLocation,
+            zoom: 15
+          });
+
+          var marker = new google.maps.Marker({
+            position: userLocation,
+            map: map,
+            title: 'Your Location'
+          });
+        }, function() {
+          handleLocationError(true);
+        });
+      } else {
+        // Browser doesn't support Geolocation
+        handleLocationError(false);
+      }
+    }
+
+    function handleLocationError(browserHasGeolocation) {
+      var errorMessage = browserHasGeolocation ?
+        'Error: The Geolocation service failed.' :
+        'Error: Your browser doesn\'t support geolocation.';
+      console.error(errorMessage);
+    }
+  </script>
+</body>
+</html>
