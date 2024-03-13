@@ -34,19 +34,19 @@ body {
     font-size: 20px;
 }
 .first-col .second-row li, .first-col .third-row li,
-.first-col .fourth-row li {
+.first-col .fourth-row li, .first-col .fifth-row li {
     border: 1px solid rgb(193, 193, 193);
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
 }
 .first-col .second-row li:hover, .first-col .third-row li:hover,
-.first-col .fourth-row li:hover {
+.first-col .fourth-row li:hover, .first-col .fifth-row li:hover {
     border: 1px solid gray;
    
 }
 .first-col .second-row a, .first-col .third-row a, 
-.first-col .fourth-row a{
+.first-col .fourth-row a, .first-col .fifth-row a{
     text-decoration: none;
     color: black;
     font-size: 17px;
@@ -56,17 +56,62 @@ body {
     font-size: 30px;
     color: #92715e;
 }
-/* .card:not(:last-child){
-    margin-right: 30px;
-}
-.card {
-    background-color: #F9F5F3;
-}
-.card img {
-    height: 450px;
-} */
 #product-col h4{
     font-weight: 600;
     text-align: center;
     padding-top: 15px;
 }
+.product-item .btn-wishlist {
+    display: block;
+    z-index: 111;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    color: #2F2E33;
+    background: #F1F1F0;
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+.product-item .btn-cart {
+    display: block;
+    z-index: 111;
+    position: absolute;
+    top: 65px;
+    right: 10px;
+    padding: 10px;
+    color: #2F2E33;
+    background: #F1F1F0;
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+.product-item:hover .btn-wishlist, 
+.product-item:hover .btn-cart {
+    opacity: 1;
+}
+
+#loadMore {
+    width: 200px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: blue;
+    transition: .3s;
+  }
+  #loadMore:hover {
+    color: blue;
+    background-color: #fff;
+    border: 1px solid blue;
+    text-decoration: none;
+  }
+  .noContent {
+    color: #000 !important;
+    background-color: transparent !important;
+    pointer-events: none;
+  }
